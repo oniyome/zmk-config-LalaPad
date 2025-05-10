@@ -203,6 +203,13 @@
             bindings = <&kp ESCAPE &kp I &kp SPACE &kp ESCAPE &kp>;
             label = "OBS_I";
         };
+
+        gmail: gmail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp ESCAPE &kp G &kp I &kp G &kp I>;
+            label = "GMAIL";
+        };
     };
 
     keymap {
@@ -237,11 +244,11 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &kp CARET             &mkp MB1               &mmv MOVE_UP    &mkp MB2         &msc SCRL_UP      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TILDE             &mmv MOVE_LEFT         &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(NUMBER_1)  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp NON_US_BACKSLASH  &mt SQT DOUBLE_QUOTES  &mkp MB3        &trans           &msc SCRL_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                &trans                 &kp LA(ENTER)   &kp LC(ENTER)    &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans                 &trans          &trans           &trans            &trans  &trans  &trans  &trans
+&trans  &kp CARET             &mkp MB1               &mmv MOVE_UP    &mkp MB2         &msc SCRL_UP      &kp LA(LEFT)  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE             &mmv MOVE_LEFT         &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(NUMBER_1)  &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &kp NON_US_BACKSLASH  &mt SQT DOUBLE_QUOTES  &mkp MB3        &trans           &msc SCRL_DOWN    &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                 &kp LA(ENTER)   &kp LC(ENTER)    &trans            &trans        &trans  &trans  &trans  &trans  &trans
+                              &trans                 &trans          &trans           &trans            &trans        &trans  &trans  &trans
             >;
         };
 
