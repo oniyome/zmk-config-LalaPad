@@ -204,11 +204,18 @@
             label = "OBS_I";
         };
 
-        gmail: gmail {
+        gmail_clear: gmail {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp ESCAPE &kp G &kp I &kp G &kp I>;
             label = "GMAIL";
+        };
+
+        obs_nextlilne: obs_nextlilne {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESC &kp I &kp ENTER &kp ESC &kp UP &kp END>;
+            label = "OBS_NEXTLILNE";
         };
     };
 
@@ -244,11 +251,11 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &kp CARET             &mkp MB1               &mmv MOVE_UP    &mkp MB2         &msc SCRL_UP      &kp LA(LEFT)  &gmail  &trans  &trans  &trans  &trans
-&trans  &kp TILDE             &mmv MOVE_LEFT         &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(NUMBER_1)  &trans        &trans  &trans  &trans  &trans  &trans
-&trans  &kp NON_US_BACKSLASH  &mt SQT DOUBLE_QUOTES  &mkp MB3        &trans           &msc SCRL_DOWN    &trans        &trans  &trans  &trans  &trans  &trans
-&trans  &trans                &trans                 &kp LA(ENTER)   &kp LC(ENTER)    &trans            &trans        &trans  &trans  &trans  &trans  &trans
-                              &trans                 &trans          &trans           &trans            &trans        &trans  &trans  &trans
+&trans  &kp CARET             &mkp MB1               &mmv MOVE_UP    &mkp MB2         &msc SCRL_UP      &kp LA(LEFT)  &gmail_clear  &kp K_APP    &trans         &kp TILDE          &kp LA(RIGHT)
+&trans  &kp TILDE             &mmv MOVE_LEFT         &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(NUMBER_1)  &kp LEFT      &kp DOWN      &kp UP       &kp RIGHT      &obs_nextlilne     &trans
+&trans  &kp NON_US_BACKSLASH  &mt SQT DOUBLE_QUOTES  &mkp MB3        &trans           &msc SCRL_DOWN    &kp HOME      &kp END       &kp PAGE_UP  &kp PAGE_DOWN  &kp LC(SEMICOLON)  &trans
+&trans  &trans                &trans                 &kp LA(ENTER)   &kp LC(ENTER)    &trans            &trans        &trans        &trans       &trans         &trans             &trans
+                              &trans                 &trans          &trans           &trans            &trans        &trans        &trans       &trans
             >;
         };
 
