@@ -197,7 +197,7 @@
             label = "OBS_A";
         };
 
-        obs_I: obs_I {
+        obs_SPC: obs_I {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp I &kp SPACE &kp ESCAPE &kp>;
@@ -229,7 +229,7 @@
 &trans      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)             &kp LS(NUMBER_5)               &kp EQUAL            &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp PLUS   &kp ASTERISK
 &trans      &kp F2            &kp F4            &kp F6            &kp LS(NUMBER_9)             &kp LS(NUMBER_0)               &mt SEMICOLON COLON  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp MINUS  &kp SLASH
 &kp LC(F6)  &trans            &trans            &kp LS(F10)       &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp N0               &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &trans     &trans
-&trans      &trans            &trans            &trans            &trans                       &trans                         &trans               &kp DELETE                 &trans                     &trans                     &trans     &trans
+&trans      &trans            &trans            &trans            &trans                       &trans                         &trans               &obs_A                     &obs_SPC                   &trans                     &trans     &trans
                               &trans            &trans            &trans                       &trans                         &trans               &trans                     &trans                     &trans
             >;
         };
@@ -237,11 +237,11 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans
+&trans  &kp CARET             &mkp MB1               &mmv MOVE_UP    &mkp MB2         &msc SCRL_UP      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE             &mmv MOVE_LEFT         &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(NUMBER_1)  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NON_US_BACKSLASH  &mt SQT DOUBLE_QUOTES  &mkp MB3        &trans           &msc SCRL_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                 &kp LA(ENTER)   &kp LC(ENTER)    &trans            &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans                 &trans          &trans           &trans            &trans  &trans  &trans  &trans
             >;
         };
 
