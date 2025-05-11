@@ -230,7 +230,7 @@
 &kp ESC                &kp Q         &kp W                 &kp E            &kp R                    &kp T          &kp Y          &kp U            &kp I            &kp O       &kp P             &ESCx2
 &trans                 &mt LSHFT A   &kp S                 &kp D            &kp F                    &kp G          &kp H          &kp J            &kp K            &kp L       &mt LSHFT MINUS   &obs_fix
 &mt LA(SPACE) LA(TAB)  &mt LC(Z) Z   &mt LC(X) X           &mt LC(C) C      &mt LC(V) V              &mt LC(B) B    &kp N          &kp M            &kp COMMA        &kp PERIOD  &mt LS(UP) SLASH  &kp LA(SPACE)
-&kp CAPS               &kp LEFT_WIN  &mt LEFT_ALT LG(TAB)  &mt LCTRL ENTER  &lt SECONDARY_LAYER DEL  &mkp MB1       &mkp MB2       &lt 2 BACKSPACE  &lt 3 SPACE      &kp LEFT    &kp DOWN          &kp RIGHT
+&kp CAPS               &kp LEFT_WIN  &mt LEFT_ALT LG(TAB)  &mt LCTRL ENTER  &lt SECONDARY_LAYER DEL  &mkp MB1       &mkp MB2       &lt 2 BACKSPACE  &lt 3 SPACE      &kp LEFT    &kp DOWN          &mo 7
                                      &allow_end            &allow_pagedown  &allow_home              &allow_pageup  &allow_pageup  &allow_home      &allow_pagedown  &allow_end
             >;
         };
@@ -240,11 +240,11 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&trans      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)             &kp LS(NUMBER_5)               &kp EQUAL            &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp PLUS   &kp ASTERISK
-&trans      &kp F2            &kp F4            &kp F6            &kp LPAR                     &kp RIGHT_PARENTHESIS          &mt SEMICOLON COLON  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp MINUS  &kp SLASH
-&kp LC(F6)  &trans            &trans            &kp LS(F10)       &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp N0               &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &trans     &trans
-&trans      &trans            &trans            &trans            &trans                       &trans                         &trans               &obs_A                     &obs_SPC                   &trans                     &trans     &trans
-                              &trans            &trans            &trans                       &trans                         &trans               &trans                     &trans                     &trans
+&trans      &kp LS(EXCLAMATION)  &kp LS(AT_SIGN)  &kp HASH     &kp LS(DOLLAR)               &kp LS(PERCENT)                &kp EQUAL            &mt LS(N7) N7                 &mt LS(N8) N8             &mt LS(N9) N9              &kp PLUS   &kp ASTERISK
+&trans      &kp F2               &kp F4           &kp F6       &kp LPAR                     &kp RIGHT_PARENTHESIS          &mt SEMICOLON COLON  &mt LS(DOLLAR) NUMBER_4       &mt LS(PERCENT) N5        &mt LS(NUMBER_6) NUMBER_6  &kp MINUS  &kp SLASH
+&kp LC(F6)  &trans               &trans           &kp LS(F10)  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &kp N0               &mt LS(EXCLAMATION) NUMBER_1  &mt LS(AT_SIGN) NUMBER_2  &mt HASH NUMBER_3          &trans     &trans
+&trans      &trans               &trans           &trans       &trans                       &trans                         &trans               &obs_A                        &obs_SPC                  &trans                     &trans     &trans
+                                 &trans           &trans       &trans                       &trans                         &trans               &trans                        &trans                    &trans
             >;
         };
 
@@ -264,11 +264,11 @@
             sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
 
             bindings = <
-&trans               &kp LC(LS(S))  &kp LC(LS(TAB))  &kp LC(TAB)  &trans       &trans      &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
-&kp PRINTSCREEN      &trans         &trans           &trans       &bootloader  &sys_reset  &sys_reset    &bootloader   &studio_unlock  &bt BT_CLR    &bt BT_CLR_ALL  &trans
-&kp LG(PRINTSCREEN)  &trans         &trans           &trans       &trans       &trans      &trans        &trans        &trans          &trans        &trans          &trans
-&trans               &trans         &trans           &trans       &trans       &trans      &trans        &trans        &trans          &trans        &trans          &trans
-                                    &trans           &trans       &trans       &trans      &trans        &trans        &trans          &trans
+&trans               &kp LC(LS(S))  &kp LC(LS(TAB))  &kp LC(TAB)        &kt LC(LS(A))  &kt LC(LS(T))          &kt LC(NUMBER_9)  &kt LC(NUMBER_1)  &kt LC(NUMBER_2)  &kt LC(NUMBER_3)  &kt LC(NUMBER_4)  &kt LC(NUMBER_5)
+&kp PRINTSCREEN      &trans         &kt LC(PG_UP)    &kt LC(PAGE_DOWN)  &kt LC(LS(D))  &kt LC(LS(BACKSLASH))  &trans            &kt LG(NUMBER_1)  &kt LG(NUMBER_2)  &kt LG(NUMBER_3)  &kt LG(NUMBER_4)  &kt LG(NUMBER_5)
+&kp LG(PRINTSCREEN)  &trans         &kt LA(UP)       &kt LA(DOWN)       &kt F10        &trans                 &trans            &trans            &trans            &trans            &trans            &trans
+&trans               &trans         &trans           &trans             &trans         &trans                 &trans            &trans            &trans            &trans            &trans            &trans
+                                    &trans           &trans             &trans         &trans                 &trans            &trans            &trans            &trans
             >;
         };
 
@@ -308,11 +308,11 @@
         SCROLL_L_LAYER {
             display-name = "scroll_l_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans  &sys_reset    &bootloader   &studio_unlock  &bt BT_CLR    &bt BT_CLR_ALL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans          &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans          &trans        &trans          &trans
+                &trans  &trans  &trans  &trans  &trans        &trans        &trans          &trans
             >;
         };
     };
