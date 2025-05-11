@@ -217,6 +217,21 @@
             bindings = <&kp ESC &kp I &kp ENTER &kp ESC &kp UP &kp END>;
             label = "OBS_NEXTLILNE";
         };
+
+        m_toka: m_toka {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp O &kp K &kp A &kp UNDER &kp N0 &kp N0 &kp N9 &kp N2 &kp N1 &kp ENTER>;
+            label = "M_TOKA";
+        };
+
+        m_telegram: m_telegram {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LWIN>, <&macro_press>, <&macro_press>, <&kp>;
+
+            label = "M_TELEGRAM";
+        };
     };
 
     keymap {
