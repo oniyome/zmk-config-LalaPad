@@ -317,7 +317,7 @@
             bindings = <
 &trans               &kp LC(LS(S))  &kp LC(LS(TAB))  &kp LC(TAB)        &kt LC(LS(A))  &kt LC(LS(T))          &kt LC(NUMBER_9)  &kt LC(NUMBER_1)  &kt LC(NUMBER_2)  &kt LC(NUMBER_3)  &kt LC(NUMBER_4)  &kt LC(NUMBER_5)
 &kp PRINTSCREEN      &trans         &kt LC(PG_UP)    &kt LC(PAGE_DOWN)  &kt LC(LS(D))  &kt LC(LS(BACKSLASH))  &trans            &kt LG(NUMBER_1)  &kt LG(NUMBER_2)  &kt LG(NUMBER_3)  &kt LG(NUMBER_4)  &kt LG(NUMBER_5)
-&kp LG(PRINTSCREEN)  &trans         &kt LA(UP)       &kt LA(DOWN)       &kt F10        &trans                 &trans            &trans            &trans            &trans            &trans            &trans
+&kp LG(PRINTSCREEN)  &trans         &kt LA(UP)       &kt LA(DOWN)       &kt F10        &trans                 &m_snippet        &m_telegram       &m_skype          &m_wechat         &trans            &m_toka
 &trans               &trans         &trans           &trans             &trans         &trans                 &trans            &trans            &trans            &trans            &trans            &trans
                                     &trans           &trans             &trans         &trans                 &trans            &trans            &trans            &trans
             >;
