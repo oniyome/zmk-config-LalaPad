@@ -71,101 +71,6 @@
         // Encoder to Mouse Scroll
     };
 
-    macros {
-        ESCx2: ESCx2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp ESCAPE>;
-            label = "ESCX2";
-        };
-
-        obs_fix: obs_fix {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ENTER &kp ESCAPE &kp ESCAPE &kp DOWN &kp HOME>;
-            label = "OBS_FIX";
-        };
-
-        obs_A: obs_A {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp ESCAPE &kp A &kp LC(SPACE)>;
-            label = "OBS_A";
-        };
-
-        obs_SPC: obs_I {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp I &kp SPACE &kp ESCAPE &kp>;
-            label = "OBS_I";
-        };
-
-        gmail_clear: gmail {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp ESCAPE &kp G &kp I &kp G &kp I>;
-            label = "GMAIL";
-        };
-
-        obs_nextlilne: obs_nextlilne {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ESC &kp I &kp ENTER &kp ESC &kp UP &kp END>;
-            label = "OBS_NEXTLILNE";
-        };
-
-        m_toka: m_toka {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp O &kp K &kp A &kp UNDER &kp N0 &kp N0 &kp N9 &kp N2 &kp N1 &kp ENTER>;
-            label = "M_TOKA";
-        };
-
-        m_telegram: m_telegram {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kt LWIN>,
-                <&macro_wait_time 300>,
-                <&kp T &kp E &kp L &kp E &kp G &kp R &kp A &kp M &kp RET>;
-
-            label = "M_TELEGRAM";
-        };
-
-        m_skype: m_skype {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kt LWIN>,
-                <&macro_wait_time 300>,
-                <&kp S &kp K &kp Y &kp P &kp E &kp ENTER>;
-
-            label = "M_SKYPE";
-        };
-
-        m_wechat: m_wechat {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kt LWIN>,
-                <&macro_wait_time 300>,
-                <&kp W &kp E &kp C &kp H &kp A &kp T &kp RET>;
-
-            label = "M_WECHAT";
-        };
-
-        m_snippet: m_snippet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kt LWIN>,
-                <&macro_wait_time 300>,
-                <&kp S &kp N &kp I &kp P &kp P &kp E &kp T &kp RET>;
-
-            label = "M_SNIPPET";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -175,7 +80,7 @@
 
             bindings = <
 &kp ESC                &kp Q         &kp W                 &kp E            &kp R                    &kp T        &kp Y     &kp U            &kp I        &kp O       &kp P             &ESCx2
-&none                  &mt LSHFT A   &kp S                 &kp D            &kp F                    &kp G        &kp H     &kp J            &kp K        &kp L       &mt LSHFT MINUS   &obs_fix
+&trans                 &mt LSHFT A   &kp S                 &kp D            &kp F                    &kp G        &kp H     &kp J            &kp K        &kp L       &mt LSHFT MINUS   &obs_fix
 &mt LA(SPACE) LA(TAB)  &mt LC(Z) Z   &mt LC(X) X           &mt LC(C) C      &mt LC(V) V              &mt LC(B) B  &kp N     &kp M            &kp COMMA    &kp PERIOD  &mt LS(UP) SLASH  &kp LA(SPACE)
 &kp CAPS               &kp LEFT_WIN  &mt LEFT_ALT LG(TAB)  &mt LCTRL ENTER  &lt SECONDARY_LAYER DEL  &mkp MB1     &mkp MB2  &lt 2 BACKSPACE  &lt 3 SPACE  &kp LEFT    &kp DOWN          &mo 7
                                      &none                 &none            &none                    &none        &none     &none            &none        &none
