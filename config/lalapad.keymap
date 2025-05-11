@@ -228,9 +228,45 @@
         m_telegram: m_telegram {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LWIN>, <&macro_press>, <&macro_press>, <&kp>;
+            bindings =
+                <&kt LWIN>,
+                <&macro_wait_time 300>,
+                <&kp T &kp E &kp L &kp E &kp G &kp R &kp A &kp M &kp RET>;
 
             label = "M_TELEGRAM";
+        };
+
+        m_skype: m_skype {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kt LWIN>,
+                <&macro_wait_time 300>,
+                <&kp S &kp K &kp Y &kp P &kp E &kp ENTER>;
+
+            label = "M_SKYPE";
+        };
+
+        m_wechat: m_wechat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kt LWIN>,
+                <&macro_wait_time 300>,
+                <&kp W &kp E &kp C &kp H &kp A &kp T &kp RET>;
+
+            label = "M_WECHAT";
+        };
+
+        m_snippet: m_snippet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kt LWIN>,
+                <&macro_wait_time 300>,
+                <&kp S &kp N &kp I &kp P &kp P &kp E &kp T &kp RET>;
+
+            label = "M_SNIPPET";
         };
     };
 
