@@ -190,6 +190,13 @@
             bindings = <&kt ESC &kp I &kp ENTER &kp ESC &kp UP &kp END>;
             label = "OBS_NEXT_LINE";
         };
+
+        obs_fix: obs_fix {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER &kp ESC &kp ESC &kp DOWN &kp HOME>;
+            label = "OBS_FIX";
+        };
     };
 
     keymap {
