@@ -175,6 +175,23 @@
         };
     };
 
+    macros {
+        esc_2: esc_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt ESC>, <&macro_wait_time 300>, <&kp ESC>;
+
+            label = "ESC_2";
+        };
+
+        obs_next_line: obs_next_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt ESC &kp I &kp ENTER &kp ESC &kp UP &kp END>;
+            label = "OBS_NEXT_LINE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
