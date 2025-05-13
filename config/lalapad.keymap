@@ -197,6 +197,64 @@
             bindings = <&kp ENTER &kp ESC &kp ESC &kp DOWN &kp HOME>;
             label = "OBS_FIX";
         };
+
+        toka: toka {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(T) &kp O &kp K &kp A &kp UNDER &kp N0 &kp N0 &kp N9 &kp N2 &kp N1 &kp RET>;
+            label = "TOKA";
+        };
+
+        telegram: telegram {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kt LGUI>,
+                <&macro_wait_time 200>,
+                <&kp T &kp E &kp L &kp E &kp G &kp R &kp A &kp M &kp RET>;
+
+            label = "TELEGRAM";
+        };
+
+        skype: skype {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LGUI>,
+                <&macro_wait_time 200>,
+                <&kp S &kp K &kp Y &kp P &kp E &kp RET>;
+
+            label = "SKYPE";
+        };
+
+        wechat: wechat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LGUI>,
+                <&macro_wait_time 200>,
+                <&kp W &kp E &kp C &kp H &kp A &kp T &kp RET>;
+
+            label = "WECHAT";
+        };
+
+        snippet: snippet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LGUI>,
+                <&macro_wait_time 200>,
+                <&kp S &kp N &kp I &kp P &kp P &kp E &kp T &kp RET>;
+
+            label = "SNIPPET";
+        };
+
+        gmail_clear: gmail_clear {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESC &kp ESC &kp G &kp I &kp G &kp I>;
+            label = "GMAIL_CLEAR";
+        };
     };
 
     keymap {
