@@ -201,7 +201,7 @@
         toka: toka {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(T) &kp O &kp K &kp A &kp UNDER &kp N0 &kp N0 &kp N9 &kp N2 &kp N1 &kp RET>;
+            bindings = <&kp LS(T) &kp O &kp K &kp A &kp UNDER &kp N0 &kp N0 &kp N9 &kp N2 &kp N1 &kp RET>;
             label = "TOKA";
         };
 
@@ -304,7 +304,7 @@
             bindings = <
 &trans           &kp LC(LS(S))  &kp LC(LS(TAB))  &kp LC(TAB)        &kt LC(LS(A))  &kp LC(LS(T))      &kp LC(N9)  &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)
 &kp PRINTSCREEN  &trans         &kt LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kt LC(LS(D))  &kp LC(BACKSLASH)  &trans      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)
-&trans           &trans         &kp LC(UP)       &kp LC(DOWN)       &kp F10        &trans             &trans      &trans      &trans      &trans      &trans      &trans
+&trans           &trans         &kp LC(UP)       &kp LC(DOWN)       &kp F10        &trans             &snippet    &telegram   &skype      &wechat     &trans      &toka
 &trans           &trans         &trans           &trans             &trans         &trans             &trans      &trans      &trans      &trans      &trans      &trans
                                 &trans           &trans             &trans         &trans             &trans      &trans      &trans      &trans
             >;
