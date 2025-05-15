@@ -289,7 +289,7 @@
             bindings = <
 &kp ESC                &mt LALT Q    &kp W         &kp E            &kp R                    &kp T          &kp Y          &kp U            &kp I            &kp O       &kp P                &esc_2
 &mt LG(TAB) TAB        &mt2 LSHFT A  &kp S         &kp D            &kp F                    &kp G          &kp H          &kp J            &kp K            &kp L       &mt LSHFT MINUS      &obs_fix
-&mt LA(SPACE) LA(TAB)  &mt LC(Z) Z   &mt LC(X) X   &mt LC(C) C      &mt LC(V) V              &mt LC(B) B    &kp N          &kp M            &kp COMMA        &kp PERIOD  &mt LS(SLASH) SLASH  &kp LA(SPACE)
+&mt LA(SPACE) LA(TAB)  &kp Z         &kp X         &kp C            &kp V                    &kp B          &kp N          &kp M            &kp COMMA        &kp PERIOD  &mt LS(SLASH) SLASH  &kp LA(SPACE)
 &kp LCTRL              &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL ENTER  &lt SECONDARY_LAYER DEL  &mkp MB1       &mkp MB2       &lt 2 BACKSPACE  &lt 3 SPACE      &kp LEFT    &kp DOWN             &mo 7
                                      &allow_end    &allow_pagedown  &allow_home              &allow_pageup  &allow_pageup  &allow_home      &allow_pagedown  &allow_end
             >;
