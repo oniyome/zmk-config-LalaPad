@@ -280,6 +280,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        kanji {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <39 44>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
