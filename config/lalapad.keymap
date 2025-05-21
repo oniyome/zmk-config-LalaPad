@@ -287,6 +287,11 @@
             bindings = <&kp LC(SPACE)>;
             key-positions = <39 44>;
         };
+
+        ins_kanji {
+            bindings = <&obs_insert>;
+            key-positions = <40 43>;
+        };
     };
 
     keymap {
