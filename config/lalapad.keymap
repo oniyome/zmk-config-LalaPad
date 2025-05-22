@@ -67,6 +67,8 @@
     };
 };
 
+&lt { tapping-term-ms = <140>; };
+
 / {
     behaviors {
         // Encoder to Mouse Scroll
