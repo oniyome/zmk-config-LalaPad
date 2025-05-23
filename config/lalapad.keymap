@@ -329,7 +329,7 @@
             display-name = "tertiary_layer";
             bindings = <
 &trans  &kp CARET      &mkp MB1                        &mmv MOVE_UP    &mkp MB2         &msc SCRL_UP    &kp LA(LEFT)  &gmail_clear  &kp K_APP  &trans         &kp TILDE          &kp LA(RIGHT)
-&trans  &kp GRAVE      &mmv MOVE_LEFT                  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(N1)      &kp LEFT      &kp DOWN      &kp UP     &kp RIGHT      &obs_next_line     &trans
+&trans  &kp GRAVE      &mmv MOVE_LEFT                  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LC(N1)      &kp LEFT      &kp DOWN      &kp UP     &allow_end     &obs_next_line     &trans
 &trans  &mt PIPE BSLH  &mt SINGLE_QUOTE DOUBLE_QUOTES  &mkp MB3        &trans           &msc SCRL_DOWN  &kp HOME      &kp END       &kp PG_UP  &kp PAGE_DOWN  &kp LC(SEMICOLON)  &trans
 &trans  &trans         &trans                          &kp LA(ENTER)   &kp LC(ENTER)    &trans          &trans        &trans        &trans     &to 0          &trans             &trans
                        &trans                          &trans          &trans           &trans          &trans        &trans        &trans     &trans
