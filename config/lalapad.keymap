@@ -221,7 +221,7 @@
             #binding-cells = <0>;
             bindings =
                 <&kt LGUI>,
-                <&macro_wait_time 200>,
+                <&macro_wait_time 400>,
                 <&kp T &kp E &kp L &kp E &kp G &kp R &kp A &kp M &kp RET>;
 
             label = "TELEGRAM";
