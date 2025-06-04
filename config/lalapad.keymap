@@ -71,7 +71,7 @@
 
 &mt {
     flavor = "tap-unless-interrupted";
-    hold-while-undecided-linger;
+    require-prior-idle-ms = <140>;
 };
 
 / {
