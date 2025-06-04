@@ -69,6 +69,11 @@
 
 &lt { tapping-term-ms = <140>; };
 
+&mt {
+    tapping-term-ms = <140>;
+    flavor = "balanced";
+};
+
 / {
     behaviors {
         // Encoder to Mouse Scroll
