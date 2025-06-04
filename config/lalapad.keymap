@@ -69,11 +69,7 @@
 
 &lt { tapping-term-ms = <140>; };
 
-&mt {
-    tapping-term-ms = <140>;
-    flavor = "tap-unless-interrupted";
-    retro-tap;
-};
+&mt { flavor = "tap-unless-interrupted"; };
 
 / {
     behaviors {
