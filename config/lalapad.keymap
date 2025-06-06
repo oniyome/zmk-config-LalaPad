@@ -362,7 +362,7 @@
 &trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans  &trans  &trans  &trans     &trans     &trans     &trans
 &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo SCROLL_R_LAYER
 &trans  &trans  &trans          &mkp MB3        &trans           &trans  &trans  &trans  &mkp MB4   &mkp MB5   &trans     &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans          &mo 5           &trans           &trans  &trans  &trans  &trans     &trans     &trans     &trans
                 &trans          &trans          &trans           &trans  &trans  &trans  &trans     &trans
             >;
 
