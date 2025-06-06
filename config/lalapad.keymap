@@ -17,7 +17,7 @@
 // Mouse Scroll Value
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 3500 // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10  // default: 10 -> 100 -> 10 -> 5 -> 1 ->20->100
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 50  // default: 10 -> 100 -> 10 -> 5 -> 1 ->20->100
 
 // cirque trackpad input&layer control
 
