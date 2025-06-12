@@ -40,7 +40,7 @@
         input-processors =
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
-            //       <&zip_scroll_scaler 1 8>;,,,,,
+            //       <&zip_scroll_scaler 1 8>;,,,,,,
             <&zip_scroll_scaler 1 64>;
     };
 };
@@ -177,7 +177,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <160>;
+            tapping-term-ms = <140>;
             quick-tap-ms = <140>;
             require-prior-idle-ms = <140>;
             bindings = <&kp>, <&kp>;
