@@ -40,7 +40,7 @@
         input-processors =
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
-            //       <&zip_scroll_scaler 1 8>;,,,,,,,,,,,
+            //       <&zip_scroll_scaler 1 8>;,,,,,,,,,,,,
             <&zip_scroll_scaler 1 64>;
     };
 };
@@ -319,16 +319,6 @@
         my_Alt+Tab {
             bindings = <&kp LA(TAB)>;
             key-positions = <8 9>;
-        };
-
-        my_Alt+SPC {
-            bindings = <&kp LA(SPACE)>;
-            key-positions = <26 27>;
-        };
-
-        my_Tab {
-            bindings = <&kp TAB>;
-            key-positions = <32 33>;
         };
     };
 
