@@ -40,7 +40,7 @@
         input-processors =
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
-            //       <&zip_scroll_scaler 1 8>;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //       <&zip_scroll_scaler 1 8>;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_scroll_scaler 1 64>;
     };
 };
@@ -323,7 +323,7 @@
             key-positions = <2 3>;
         };
 
-        my_i_C+SPC {
+        my_i_C_SPC {
             bindings = <&obs_insert>;
             key-positions = <8 9>;
         };
