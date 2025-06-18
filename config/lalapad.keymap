@@ -40,7 +40,7 @@
         input-processors =
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
-            //       <&zip_scroll_scaler 1 8>;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //       <&zip_scroll_scaler 1 8>;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_scroll_scaler 1 64>;
     };
 };
@@ -342,11 +342,11 @@
             sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
 
             bindings = <
-&trans                 &mt LALT Q       &kp W         &kp E             &kp R                    &kp T          &kp Y          &kp U        &kp I            &kp O       &mt LWIN P           &trans
-&mt LSHFT TAB          &mt2 LSHIFT A    &kp S         &kp D             &kp F                    &kp G          &kp H          &kp J        &kp K            &kp L       &mt LSHFT MINUS      &obs_fix2
-&mt LA(SPACE) LA(TAB)  &mt LA(SPACE) Z  &kp X         &kp C             &kp V                    &kp B          &kp N          &kp M        &kp COMMA        &kp PERIOD  &mt LS(SLASH) SLASH  &kp LA(SPACE)
-&caps_word             &kp LEFT_WIN     &kp LEFT_ALT  &mt2 LCTRL ENTER  &lt SECONDARY_LAYER DEL  &mkp MB1       &mkp MB2       &mo 2        &lt 3 SPACE      &to 2       &mo 7                &kp LC(SPACE)
-                                        &allow_end    &allow_pagedown   &allow_home              &allow_pageup  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
+&trans                 &mt LALT Q     &kp W         &kp E             &kp R                    &kp T          &kp Y          &kp U        &kp I            &kp O       &mt LWIN P           &trans
+&mt LSHFT TAB          &mt2 LSHIFT A  &kp S         &kp D             &kp F                    &kp G          &kp H          &kp J        &kp K            &kp L       &mt LSHFT MINUS      &obs_fix2
+&mt LA(SPACE) LA(TAB)  &kp LA(Z)      &kp X         &kp C             &kp V                    &kp B          &kp N          &kp M        &kp COMMA        &kp PERIOD  &mt LS(SLASH) SLASH  &kp LA(SPACE)
+&caps_word             &kp LEFT_WIN   &kp LEFT_ALT  &mt2 LCTRL ENTER  &lt SECONDARY_LAYER DEL  &mkp MB1       &mkp MB2       &mo 2        &lt 3 SPACE      &to 2       &mo 7                &kp LC(SPACE)
+                                      &allow_end    &allow_pagedown   &allow_home              &allow_pageup  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
             >;
         };
 
