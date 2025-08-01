@@ -40,7 +40,7 @@
         input-processors =
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
-            //       <&zip_scroll_scaler 1 8>;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //       <&zip_scroll_scaler 1 8>;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_scroll_scaler 1 64>;
     };
 };
@@ -362,9 +362,7 @@
 
         SECONDARY_LAYER {
             display-name = "secondary_layer";
-            sensor-bindings =
-                <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>,
-                <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
 
             bindings = <
 &caps_word  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)             &kp LS(NUMBER_5)               &kp EQUAL            &mt AMPS N7         &mt ASTERISK N8  &mt LEFT_PARENTHESIS N9  &kp PLUS              &kp ASTERISK
