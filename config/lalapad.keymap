@@ -40,7 +40,7 @@
         input-processors =
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
-            //       <&zip_scroll_scaler 1 8>;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //       <&zip_scroll_scaler 1 8>;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_scroll_scaler 1 64>;
     };
 };
@@ -383,7 +383,9 @@
                        &trans                          &trans          &trans           &trans          &trans        &trans        &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
+            sensor-bindings =
+                <&inc_dec_kp LC(PG_UP) LC(PAGE_DOWN)>,
+                <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         SYSTEM_LAYER {
